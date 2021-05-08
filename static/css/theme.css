@@ -750,6 +750,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+
+  margin-left: 300px;
+  background-color: white;
 }
 
 main {
@@ -758,8 +761,9 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 75%;
           flex: 0 0 75%;
-  max-width: 75%;
 }
+
+
 main:only-child {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1252,55 +1256,54 @@ main {
     padding: 1rem;
   }
 }
+
 .sidebar {
   font-size: 90%;
   line-height: 1.8;
-  background: #f9f9f9;
   border-right: 1px solid #eee;
+  background-color: #fafafa;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 300px;
+  overflow: auto;
 }
+
 .sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .sidebar a {
   position: relative;
   display: block;
   color: #404040;
   text-decoration: none;
-  padding: 0.2rem 1rem;
-  border-left: solid 4px #f9f9f9;
-  border-bottom: solid 1px #eee;
+  padding: 8px 15px;
 }
+
 .sidebar a:hover {
-  color: #404040;
-  background: #eee;
-  border-left: solid 4px #ccc;
+  text-decoration: underline;
 }
+
 .sidebar nav > ul > li li a {
   padding-left: 2rem;
 }
-.sidebar nav > ul ul > li li a {
-  padding-left: 3rem;
-}
-.sidebar nav > ul ul ul > li li a {
-  padding-left: 4rem;
-}
-.sidebar nav > ul ul ul ul > li li a {
-  padding-left: 5rem;
-}
-.sidebar nav > ul ul ul ul ul > li li a {
-  padding-left: 6rem;
-}
+
 @media screen and (max-width: 480px) {
   .sidebar nav > ul > li:first-child a {
     border-top: solid 1px #eee;
   }
 }
+
 .sidebar .active > a {
-  background: #eee;
-  border-left: solid 4px #ccc;
+  color: #008cff;
+  text-decoration: none;
 }
+
 .sidebar .slide-menu .has-sub-menu:not(.parent) ul {
   display: none;
 }
