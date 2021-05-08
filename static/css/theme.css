@@ -516,6 +516,7 @@ p {
 img {
   display: inline-block;
   line-height: 0;
+  border: 1px solid #eee;
 }
 
 img,
